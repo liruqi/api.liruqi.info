@@ -54,8 +54,15 @@ require_once 'vendor/PHPExcel-1.8.1/Classes/PHPExcel.php';
             if (strpos($nsUser['title'], $nsUser['brand'])===0) {
                 $yes [] = $nsUser;
                 $suffix = substr($nsUser['title'], strlen($nsUser['brand']));
-                $objPHPExcel->getActiveSheet()->setCellValue('F' . $cnt, $suffix);
-            echo json_encode($nsUser) . PHP_EOL;
+                $fgh = explode(" ", $suffix);
+                $f = $fgh[0];
+                $objPHPExcel->getActiveSheet()->setCellValue('F' . $cnt, $f);
+                if (isset($fgh[1])) {
+                    list($g, $h) = sscanf($fgh[1], "%d%s");
+                    $objPHPExcel->getActiveSheet()->setCellValue('G' . $cnt, $g);
+                    $objPHPExcel->getActiveSheet()->setCellValue('H' . $cnt, $h);
+                } 
+                echo json_encode($nsUser) . PHP_EOL;
             } else {
                 echo ($nsUser['title'] . " " .  $nsUser['brand']. PHP_EOL);
             }
@@ -66,5 +73,5 @@ require_once 'vendor/PHPExcel-1.8.1/Classes/PHPExcel.php';
         echo "<p>无变更: " . implode(', ', $ignore) . "</p>";
 
 $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
-$objWriter->save($root . "/uploads/" . time() . $name);
+$objWriter->save($root . "/uploads/" . time() . $name . ".xlsx");
 
