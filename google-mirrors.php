@@ -7,6 +7,7 @@ if ($_GET['https'] > 0) {
 ) ); 
 } else {
     echo json_encode( array(
+"http://bing.com/",
 "http://google.sidney-aldebaran.me",
 "http://www.gufen138.com",
 "http://www.wanzi138.com",
