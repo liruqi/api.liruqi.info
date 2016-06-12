@@ -12,4 +12,4 @@ array(
 "https://gg.wen.lu",
 "https://www.sslpxy.com",
 ),
-"bing" => array("https://bing.com") );
+"bing" => array("https://bing.com") ));
