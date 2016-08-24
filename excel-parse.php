@@ -1,5 +1,6 @@
 <?php
 
+$name = "test-25.xls";
 if (isset($_SERVER["REMOTE_ADDR"])) {
 ?>
 <!DOCTYPE html>
@@ -11,13 +12,15 @@ if (isset($_SERVER["REMOTE_ADDR"])) {
 <body>
 <?php
 
-echo $_SERVER["REMOTE_ADDR"] . "<br/>";
+    echo $_SERVER["REMOTE_ADDR"] . "<br/>";
+    if ($_GET['name']) $name = $_GET['name']; 
+} else {
+    if (count($argv) > 1) $name = $argv[1];
 }
 
 require_once 'vendor/PHPExcel-1.8.1/Classes/PHPExcel.php';
 
         $root =  dirname(__FILE__);
-        $name = "test-25.xls";
         $importFile = $root . "/uploads/" . $name;
         $objDateTime = new DateTime('NOW'); 
         
