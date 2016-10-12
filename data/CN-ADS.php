@@ -18,6 +18,7 @@ if($REJECT) {
             curl_setopt($ch, CURLOPT_HEADER, TRUE); 
             curl_setopt($ch, CURLOPT_NOBODY, TRUE); // remove body 
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE); 
+            curl_setopt($ch, CURLOPT_TIMEOUT, 6); 
             $head = curl_exec($ch); 
             $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE); 
             curl_close($ch); 
