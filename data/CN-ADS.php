@@ -12,7 +12,7 @@ if($REJECT) {
         if (count($arr) != 2) break;
         $json["rules"][] = array('action'=>'REJECT', 'pattern'=>$arr[1], 'type'=>$arr[0], 'order' => '0');
         
-        $url = "http" . $arr[1];
+        $url = "http://" . $arr[1];
         $ch = curl_init(); 
             curl_setopt($ch, CURLOPT_URL, $url); 
             curl_setopt($ch, CURLOPT_HEADER, TRUE); 
