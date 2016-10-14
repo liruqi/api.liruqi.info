@@ -13,9 +13,19 @@ if($REJECT) {
     }
     fclose($REJECT);
 }
-$json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'bilibili.com', 'type'=>'DOMAIN-SUFFIX', 'order' => '0');
+
+$DIRECT = fopen($basedir . "data/DIRECT.txt","r");
+if($DIRECT) {
+    while(!feof($DIRECT)) {
+        $line = trim(fgets($DIRECT));
+        $arr = explode(",", $line);
+        if (count($arr) != 2) break;
+        $json["rules"][] = array('action'=>'DIRECT', 'pattern'=>$arr[1], 'type'=>$arr[0], 'order' => '0');
+    }
+    fclose($REJECT);
+}
 $json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'CN', 'type'=>'GEOIP', 'order' => '0');
 $json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'.cn', 'type'=>'URL', 'order' => '0');
 $json['name'] = '中国地区广告屏蔽后直连';
 if (!isset($_SERVER['REQUEST_URI']) || strpos($_SERVER['REQUEST_URI'], $json["id"]) !== FALSE) 
-    echo json_encode($json);
+    echo json_encode($json, JSON_PRETTY_PRINT);
