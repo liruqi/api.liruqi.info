@@ -14,7 +14,7 @@ if($REJECT) {
     fclose($REJECT);
 }
 
-$DIRECT = fopen($basedir . "data/DIRECT.txt","r");
+$DIRECT = fopen($basedir . "data/DIRECT","r");
 if($DIRECT) {
     while(!feof($DIRECT)) {
         $line = trim(fgets($DIRECT));
