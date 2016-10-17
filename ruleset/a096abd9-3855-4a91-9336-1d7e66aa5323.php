@@ -2,7 +2,7 @@
 $basedir = dirname(dirname(__FILE__)) . "/";
 $jsonstr = file_get_contents($basedir . "ruleset/a096abd9-3855-4a91-9336-1d7e66aa5323.mume");
 $json = json_decode($jsonstr, true);
-
+$json['id'] = 'a096abd9-3855-4a91-9336-1d7e66aa5323';
 $REJECT = fopen($basedir . "data/CN-ADS","r");
 if($REJECT) {
     while(!feof($REJECT)) {

@@ -8,10 +8,11 @@ $jsonArray = [];
 foreach($files as $key => $name) {
     $uuid = explode(".", $name)[0];
     if (isset($names[$uuid])) continue;
-    $names[$uuid] = 1;
     if (explode(".", $name)[1] == "json") {
+        $names[$uuid] = 1;
         $jsonArray[] = json_decode( file_get_contents($rulesetdir . "/" . $name), true);
     } else if (explode(".", $name)[1] == "php"){
+        $names[$uuid] = 1;
         include $rulesetdir . "/" . $name;
         $jsonArray[] = $json;
     }
