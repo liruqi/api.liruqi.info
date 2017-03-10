@@ -14,7 +14,7 @@
   {"action": "PROXY", "pattern": "ytimg.com", "type": "DOMAIN-SUFFIX", "order": "0"},
   {"action": "PROXY", "pattern": "twitter.com", "type": "DOMAIN-SUFFIX", "order": "0"},
   {"action": "PROXY", "pattern": "t.co", "type": "DOMAIN-SUFFIX", "order": "0"},
-  {"action": "PROXY", "pattern": ".*instagram*.", "type": "URL", "order": "0"}
+  {"action": "PROXY", "pattern": ".*instagram*.", "type": "URL", "order": "0"},
   {"action": "PROXY", "pattern": "ampproject.org", "type": "DOMAIN-SUFFIX", "order": "0"}
  ], "created_at": "2016-06-15T08:57:47", "is_official": true, 
  "name": "Proxy popular Apps", "description": "Proxy blocked popular Apps in China, like Instagram"}
