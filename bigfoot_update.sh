@@ -16,7 +16,6 @@ bf_update_url="http://bigfoot.178.com/wow/update.html"
 bf_working_dir="/tmp/bfworking"
 page_tmp="${bf_working_dir}/update.html"
 bf_download_prefix="wow.bfupdate.178.com/BigFoot/Interface/3.1/Interface."
-bf_tmp_pkg="${bf_working_dir}/bf_update.zip"
 ext_dir="/opt/liruqi/bigfoot"
 AddOns="AddOns"
 
@@ -37,6 +36,12 @@ function bfupdate()
     fi
     iconv -c -f utf-8 -t ascii ${page_tmp} > ${page_tmp}".txt" 
     version=$(cat ${page_tmp}".txt" | cut -dV -f2 | cut -d"<" -f1)
+    bf_tmp_pkg="${bf_working_dir}/${version}.zip"
+    if [ -f $bf_tmp_pkg ]; then
+        echo "Version ${version} is latest!"
+        exit 0
+    fi 
+
     echo "3. Latest version is ${version}, downloading...\n"
     wget ${bf_download_prefix}${version}.zip -O ${bf_tmp_pkg} 1>/dev/null
     if [ $? -ne 0 ]; then
