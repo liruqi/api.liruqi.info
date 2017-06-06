@@ -18,6 +18,10 @@ DOMAIN-SUFFIX,bdimg.cnkang.com
 DOMAIN-SUFFIX,cast.ra.icast.cn
 DOMAIN,cn.wifi.com
 DOMAIN-SUFFIX,cpro.baidu.com.cn
+DOMAIN-SUFFIX,hm.baidu.com.cn
+DOMAIN-SUFFIX,cb.baidu.com
+DOMAIN-SUFFIX,cpro.baidu.com
+DOMAIN-SUFFIX,union.baidu.com
 DOMAIN-SUFFIX,domob.cn
 DOMAIN-SUFFIX,d7.sina.com.cn
 DOMAIN-SUFFIX,dmp.sina.cn
@@ -33,7 +37,6 @@ DOMAIN-SUFFIX,gclick.cn
 DOMAIN,game.kuwo.cn
 DOMAIN-SUFFIX,goyoo.com.cn
 DOMAIN-SUFFIX,haowj.com.cn
-DOMAIN,hm.baidu.com.cn
 DOMAIN-SUFFIX,intely.cn
 DOMAIN-SUFFIX,i8.com.cn
 DOMAIN-SUFFIX,index8.cn
