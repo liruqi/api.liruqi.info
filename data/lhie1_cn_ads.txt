@@ -848,7 +848,6 @@ DOMAIN-SUFFIX,808.tianya.cn
 DOMAIN-SUFFIX,bdj.tianya.cn
 DOMAIN-SUFFIX,click.tianyaui.com
 DOMAIN-SUFFIX,dol.tianya.cn
-DOMAIN-SUFFIX,adm.10jqka.com.cn
 DOMAIN-SUFFIX,ad.toutiao.com
 DOMAIN-SUFFIX,d.toutiao.com
 DOMAIN-SUFFIX,dm.toutiao.com
