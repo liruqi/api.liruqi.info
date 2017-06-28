@@ -1,9 +1,16 @@
 <?php
+require 'vendor/autoload.php';
+use GeoIp2\Database\Reader;
+
 $names = array();
 $names['f1176cc3-9312-4024-8789-5d7c4bf28797'] = 1;
-if ($_GET['lang'] == 'zh-Hans-CN' || $_GET['lang'] == 'en-CN') {
+
+$mmdbReader = new Reader('/srv/http/106.187.88.85/vpn/GeoLite2-City_20170606/GeoLite2-City.mmdb');
+$record = $mmdbReader->city($_SERVER['REMOTE_ADDR']);
+if ($record->country->isoCode === 'CN') {
     $names['f1176cc3-9312-4024-8789-5d7c4bf28798'] = 1;
 }
+
 $rulesetdir =  dirname(__FILE__) . "/ruleset";
 $files = array_diff(scandir($rulesetdir), ['.', '..']);
 
@@ -17,6 +24,12 @@ foreach($files as $key => $name) {
     } else if (explode(".", $name)[1] == "php"){
         $names[$uuid] = 1;
         include $rulesetdir . "/" . $name;
+        if (empty($json)) {
+            continue;
+        }
+        if (count($json) < 5) {
+            continue;
+        }
         $jsonArray[] = $json;
     }
 }
