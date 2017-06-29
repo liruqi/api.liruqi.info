@@ -530,6 +530,7 @@ DOMAIN-SUFFIX,inside.baidu.com
 DOMAIN-SUFFIX,itsdata.map.baidu.com
 DOMAIN-SUFFIX,j.br.baidu.com
 DOMAIN-SUFFIX,kstj.baidu.com
+DOMAIN-SUFFIX,landingpage-cdn1.gbicom.cn
 DOMAIN-SUFFIX,log.music.baidu.com
 DOMAIN-SUFFIX,log.nuomi.com
 DOMAIN-SUFFIX,log.waimai.baidu.com
