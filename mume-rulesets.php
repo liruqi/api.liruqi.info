@@ -7,8 +7,9 @@ $names['f1176cc3-9312-4024-8789-5d7c4bf28797'] = 1;
 
 $mmdbReader = new Reader('/srv/http/106.187.88.85/vpn/GeoLite2-City_20170606/GeoLite2-City.mmdb');
 $record = $mmdbReader->city($_SERVER['REMOTE_ADDR']);
-if ($record->country->isoCode === 'CN') {
+if (substr($_GET['lang'],0,2)=='zh' || $record->country->isoCode === 'CN') {
     $names['f1176cc3-9312-4024-8789-5d7c4bf28798'] = 1;
+} else {
 }
 
 $rulesetdir =  dirname(__FILE__) . "/ruleset";
@@ -23,7 +24,7 @@ foreach($files as $key => $name) {
         $jsonArray[] = json_decode( file_get_contents($rulesetdir . "/" . $name), true);
     } else if (explode(".", $name)[1] == "php"){
         $names[$uuid] = 1;
-        include $rulesetdir . "/" . $name;
+        include_once $rulesetdir . "/" . $name;
         if (empty($json)) {
             continue;
         }
