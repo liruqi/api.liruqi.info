@@ -32,6 +32,7 @@ foreach($files as $key => $name) {
             continue;
         }
         $jsonArray[] = $json;
+        $json = [];
     }
 }
 
