@@ -222,6 +222,7 @@ DOMAIN-SUFFIX,insder.co
 DOMAIN-SUFFIX,instapaper.com
 DOMAIN-SUFFIX,instructables.com
 DOMAIN-SUFFIX,io.io
+DOMAIN-SUFFIX,ipinfo.io
 DOMAIN-SUFFIX,ipn.li
 DOMAIN-SUFFIX,is.gd
 DOMAIN-SUFFIX,issuu.com
@@ -299,7 +300,6 @@ DOMAIN-SUFFIX,optimizely.com
 DOMAIN-SUFFIX,orkut.com
 DOMAIN-SUFFIX,osha.gov
 DOMAIN-SUFFIX,osxdaily.com
-DOMAIN-SUFFIX,outlook.com
 DOMAIN-SUFFIX,ow.ly
 DOMAIN-SUFFIX,paddleapi.com
 DOMAIN-SUFFIX,panoramio.com

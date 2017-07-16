@@ -1183,5 +1183,4 @@ DOMAIN-SUFFIX,yiqifa.com
 DOMAIN-SUFFIX,yooli.com
 DOMAIN-SUFFIX,youmi.net
 DOMAIN-SUFFIX,yrxmr.com
-DOMAIN-SUFFIX,ysjwj.com
 DOMAIN-SUFFIX,zhiziyun.com
