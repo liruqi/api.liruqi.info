@@ -15,7 +15,7 @@ if($DIRECT) {
 }*/
 $json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'CN', 'type'=>'GEOIP', 'order' => '0');
 $json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'.cn', 'type'=>'URL', 'order' => '0');
-$json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'apple.com', 'type'=>'DOMAIN-SUFFIX', 'order' => '0');
+$json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'captive.apple.com', 'type'=>'DOMAIN-SUFFIX', 'order' => '0');
 $json['name'] = '中国地区直连';
 if (!isset($_SERVER['REQUEST_URI']) || strpos($_SERVER['REQUEST_URI'], $json["id"]) !== FALSE) 
     echo json_encode($json, JSON_PRETTY_PRINT);

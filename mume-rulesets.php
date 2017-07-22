@@ -10,6 +10,7 @@ $record = $mmdbReader->city($_SERVER['REMOTE_ADDR']);
 if (substr($_GET['lang'],0,2)=='zh' || $record->country->isoCode === 'CN') {
     $names['f1176cc3-9312-4024-8789-5d7c4bf28798'] = 1;
 } else {
+    $names['833fb590-f3d2-419f-9b64-e4879f2ed5a3'] = 1; //proxy rules
 }
 
 $rulesetdir =  dirname(__FILE__) . "/ruleset";
