@@ -1,6 +1,6 @@
 <?php
 
-if (($_GET['version']==='1.7.4' || $_GET['version']==='1.0') && $_GET['lang']==='zh-Hans-CN') {
+if (($_GET['version']==='1.7.5' || ($_GET['version'] <= 1.1)) /*&& $_GET['lang']==='zh-Hans-CN'*/) {
     $basedir = dirname(dirname(__FILE__)) . "/";
     $jsonstr = file_get_contents($basedir . "ruleset/a096abd9-3855-4a91-9336-1d7e66aa5323.mume");
     $json = json_decode($jsonstr, true);
