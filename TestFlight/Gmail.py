@@ -127,15 +127,6 @@ def main():
     http = credentials.authorize(httplib2.Http())
     service = discovery.build('gmail', 'v1', http=http)
 
-    results = service.users().labels().list(userId='me').execute()
-    labels = results.get('labels', [])
-    
-    if not labels:
-        print('No labels found.')
-    else:
-      print('Labels:')
-      for label in labels:
-        print(label['name'])
     messages = ListMessagesMatchingQuery(service, 'me', 'to:mume@mumevpn.com')
     if not messages:
         print('No messages found.')
