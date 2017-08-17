@@ -1,6 +1,4 @@
 DOMAIN-SUFFIX,google.com
-DOMAIN-SUFFIX,appsto.re
-DOMAIN-SUFFIX,apps.mzstatic.com
 DOMAIN-SUFFIX,lin.ee
 DOMAIN-SUFFIX,line.me
 DOMAIN-SUFFIX,line.naver.jp
@@ -9,13 +7,13 @@ DOMAIN-SUFFIX,line-cdn.net
 DOMAIN-SUFFIX,line-scdn.net
 DOMAIN-SUFFIX,nhncorp.jp
 DOMAIN-SUFFIX,mytvsuper.com
+DOMAIN-SUFFIX,tvb.com
 DOMAIN-SUFFIX,netflix.com
 DOMAIN-SUFFIX,netflix.net
 DOMAIN-SUFFIX,nflxext.com
 DOMAIN-SUFFIX,nflximg.com
 DOMAIN-SUFFIX,nflximg.net
 DOMAIN-SUFFIX,nflxvideo.net
-DOMAIN-SUFFIX,tvb.com
 DOMAIN-SUFFIX,1e100.net
 DOMAIN-SUFFIX,2o7.net
 DOMAIN-SUFFIX,4everProxy.com
@@ -54,7 +52,6 @@ DOMAIN-SUFFIX,appledaily.com.tw
 DOMAIN-SUFFIX,appledailytw.com
 DOMAIN-SUFFIX,apple-dns.net
 DOMAIN-SUFFIX,appshopper.com
-DOMAIN-SUFFIX,appsto.re
 DOMAIN-SUFFIX,arcgis.com
 DOMAIN-SUFFIX,archive.is
 DOMAIN-SUFFIX,archive.org
@@ -90,11 +87,11 @@ DOMAIN-SUFFIX,boomtrain.com
 DOMAIN-SUFFIX,box.com
 DOMAIN-SUFFIX,box.net
 DOMAIN-SUFFIX,boxun.com
-DOMAIN-SUFFIX,burpsuite.applinzi.com
 DOMAIN-SUFFIX,cachefly.net
 DOMAIN-SUFFIX,cbc.ca
 DOMAIN-SUFFIX,cdn.segment.com
 DOMAIN-SUFFIX,cdnst.net
+DOMAIN-SUFFIX,celestrak.com
 DOMAIN-SUFFIX,census.gov
 DOMAIN-SUFFIX,certificate-transparency.org
 DOMAIN-SUFFIX,chinatimes.com
@@ -114,7 +111,6 @@ DOMAIN-SUFFIX,cnn.com
 DOMAIN-SUFFIX,cocoapods.org
 DOMAIN-SUFFIX,comodoca.com
 DOMAIN-SUFFIX,content.office.net
-DOMAIN-SUFFIX,crashlytics.com
 DOMAIN-SUFFIX,d.pr
 DOMAIN-SUFFIX,danilo.to
 DOMAIN-SUFFIX,daolan.net
@@ -155,16 +151,17 @@ DOMAIN-SUFFIX,evernote.com
 DOMAIN-SUFFIX,extmatrix.com
 DOMAIN-SUFFIX,eyny.com
 DOMAIN-SUFFIX,fabric.io
+DOMAIN-SUFFIX,fast.com
 DOMAIN-SUFFIX,fastly.net
 DOMAIN-SUFFIX,fc2.com
 DOMAIN-SUFFIX,feedburner.com
 DOMAIN-SUFFIX,feedly.com
 DOMAIN-SUFFIX,feedsportal.com
 DOMAIN-SUFFIX,fiftythree.com
-DOMAIN-SUFFIX,firebaseio.com
 DOMAIN-SUFFIX,flexibits.com
 DOMAIN-SUFFIX,flickr.com
 DOMAIN-SUFFIX,flipboard.com
+DOMAIN-SUFFIX,fullstory.com
 DOMAIN-SUFFIX,flipkart.com
 DOMAIN-SUFFIX,flitto.com
 DOMAIN-SUFFIX,freeopenProxy.com
@@ -178,6 +175,7 @@ DOMAIN-SUFFIX,getdropbox.com
 DOMAIN-SUFFIX,getfoxyProxy.org
 DOMAIN-SUFFIX,getlantern.org
 DOMAIN-SUFFIX,getmdl.io
+DOMAIN-SUFFIX,getpricetag.com
 DOMAIN-SUFFIX,gfw.press
 DOMAIN-SUFFIX,gfx.ms
 DOMAIN-SUFFIX,ggpht.com
@@ -218,11 +216,11 @@ DOMAIN-SUFFIX,imageshack.us
 DOMAIN-SUFFIX,img.ly
 DOMAIN-SUFFIX,imgur.com
 DOMAIN-SUFFIX,imore.com
+DOMAIN-SUFFIX,ingress.com 
 DOMAIN-SUFFIX,insder.co
 DOMAIN-SUFFIX,instapaper.com
 DOMAIN-SUFFIX,instructables.com
 DOMAIN-SUFFIX,io.io
-DOMAIN-SUFFIX,ipinfo.io
 DOMAIN-SUFFIX,ipn.li
 DOMAIN-SUFFIX,is.gd
 DOMAIN-SUFFIX,issuu.com
@@ -240,6 +238,7 @@ DOMAIN-SUFFIX,kakaocdn.net
 DOMAIN-SUFFIX,kat.cr
 DOMAIN-SUFFIX,kenengba.com
 DOMAIN-SUFFIX,klip.me
+DOMAIN-SUFFIX,leancloud.com
 DOMAIN-SUFFIX,libsyn.com
 DOMAIN-SUFFIX,licdn.com
 DOMAIN-SUFFIX,lightboxcdn.com
@@ -283,6 +282,7 @@ DOMAIN-SUFFIX,nih.gov
 DOMAIN-SUFFIX,nintendo.com
 DOMAIN-SUFFIX,nintendo.net
 DOMAIN-SUFFIX,nrk.no
+DOMAIN-SUFFIX,notion.so
 DOMAIN-SUFFIX,nsstatic.net
 DOMAIN-SUFFIX,nssurge.com
 DOMAIN-SUFFIX,nyt.com
@@ -346,6 +346,8 @@ DOMAIN-SUFFIX,sfx.ms
 DOMAIN-SUFFIX,shadowsocks.org
 DOMAIN-SUFFIX,sharethis.com
 DOMAIN-SUFFIX,shazam.com
+DOMAIN-SUFFIX,simp.ly
+DOMAIN-SUFFIX,simplenote.com
 DOMAIN-SUFFIX,shutterstock.com
 DOMAIN-SUFFIX,sidelinesnews.com
 DOMAIN-SUFFIX,sketchappsources.com
@@ -369,7 +371,6 @@ DOMAIN-SUFFIX,sowers.org.hk
 DOMAIN-SUFFIX,speedtest.net
 DOMAIN-SUFFIX,spike.com
 DOMAIN-SUFFIX,spoti.fi
-DOMAIN-SUFFIX,spotify.com
 DOMAIN-SUFFIX,squarespace.com
 DOMAIN-SUFFIX,ssa.gov
 DOMAIN-SUFFIX,sstatic.net
@@ -502,7 +503,6 @@ DOMAIN-SUFFIX,vzw.com
 DOMAIN-SUFFIX,w.org
 DOMAIN-SUFFIX,w3schools.com
 DOMAIN-SUFFIX,wattpad.com
-DOMAIN-SUFFIX,weather.com
 DOMAIN-SUFFIX,web2project.net
 DOMAIN-SUFFIX,webfreer.com
 DOMAIN-SUFFIX,weblagu.com
@@ -526,8 +526,8 @@ DOMAIN-SUFFIX,windows.com
 DOMAIN-SUFFIX,windows.net
 DOMAIN-SUFFIX,wn.com
 DOMAIN-SUFFIX,wordpress.com
-DOMAIN-SUFFIX,workflowy.com
 DOMAIN-SUFFIX,worldcat.org
+DOMAIN-SUFFIX,workflow.is
 DOMAIN-SUFFIX,wow.com
 DOMAIN-SUFFIX,wp.com
 DOMAIN-SUFFIX,wsj.com
@@ -562,6 +562,7 @@ DOMAIN-SUFFIX,zynamics.com
 DOMAIN-SUFFIX,appspot.com
 DOMAIN-SUFFIX,cdninstagram.com
 DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,facebook.design
 DOMAIN-SUFFIX,fb.com
 DOMAIN-SUFFIX,fb.me
 DOMAIN-SUFFIX,fbcdn.net
