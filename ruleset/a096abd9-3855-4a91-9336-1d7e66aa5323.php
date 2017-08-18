@@ -1,5 +1,5 @@
 <?php
-
+if ($_GET['build'] !== '203' && $_GET['appstore'] === '1') {
     $basedir = dirname(dirname(__FILE__)) . "/";
     $jsonstr = file_get_contents($basedir . "ruleset/a096abd9-3855-4a91-9336-1d7e66aa5323.mume");
     $json = json_decode($jsonstr, true);
@@ -15,10 +15,11 @@
         fclose($REJECT);
     }
 
-if ($country==='CN') {
-    $json['name'] = '阻止广告类的网络请求';
-} else {
-    $json['name'] = 'Block Ads traffic';
-}
+    if ($country==='CN') {
+        $json['name'] = '阻止广告类的网络请求';
+    } else {
+        $json['name'] = 'Block Ads traffic';
+    }
     if (!isset($_SERVER['REQUEST_URI']) || strpos($_SERVER['REQUEST_URI'], $json["id"]) !== FALSE) 
         echo json_encode($json, JSON_PRETTY_PRINT);
+}
