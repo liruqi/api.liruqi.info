@@ -16,7 +16,11 @@ if($DIRECT) {
 $json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'CN', 'type'=>'GEOIP', 'order' => '0');
 $json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'.cn', 'type'=>'URL', 'order' => '0');
 $json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'.qq.com', 'type'=>'URL', 'order' => '0');
-$json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'idu.com', 'type'=>'URL', 'order' => '0');
+$json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'baidu.com', 'type'=>'DOMAIN-SUFFIX', 'order' => '0');
+$json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'45.0.0.0/8', 'type'=>'IP-CIDR', 'order' => '0');
+$json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'61.0.0.0/8', 'type'=>'IP-CIDR', 'order' => '0');
+$json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'119.0.0.0/8', 'type'=>'IP-CIDR', 'order' => '0');
+$json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'220.0.0.0/8', 'type'=>'IP-CIDR', 'order' => '0');
 $json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'captive.apple.com', 'type'=>'DOMAIN-SUFFIX', 'order' => '0');
 $json['name'] = '中国地区直连';
 if (!isset($_SERVER['REQUEST_URI']) || strpos($_SERVER['REQUEST_URI'], $json["id"]) !== FALSE) 
