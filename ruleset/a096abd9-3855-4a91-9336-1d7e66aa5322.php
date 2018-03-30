@@ -23,5 +23,8 @@ $json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'119.0.0.0/8', 'type'=>'
 $json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'220.0.0.0/8', 'type'=>'IP-CIDR', 'order' => '0');
 $json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'captive.apple.com', 'type'=>'DOMAIN-SUFFIX', 'order' => '0');
 $json['name'] = '中国地区直连';
+
+if ($_GET['q'] != $json['id']) {
 if (!isset($_SERVER['REQUEST_URI']) || strpos($_SERVER['REQUEST_URI'], $json["id"]) !== FALSE) 
     echo json_encode($json, JSON_PRETTY_PRINT);
+}

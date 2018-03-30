@@ -4,8 +4,8 @@ $jsonArray = [];
 $langs = explode('-', $_GET['lang']);
 $country = end($langs); 
 if (strlen($country) !== 2) {
-    echo json_encode($jsonArray);
-    exit();
+    #echo json_encode($jsonArray);
+    #exit();
 }
 
 // require 'vendor/autoload.php';
@@ -15,7 +15,7 @@ $names = array();
 $names['f1176cc3-9312-4024-8789-5d7c4bf28797'] = 1;
 
 if ($_GET['build'] == 61 || $_GET['build'] == 60) {
-    $names['833fb590-f3d2-419f-9b64-e4879f2ed5a3'] = 1;
+    #$names['833fb590-f3d2-419f-9b64-e4879f2ed5a3'] = 1;
 }
 // $mmdbReader = new Reader('/srv/http/106.187.88.85/vpn/GeoLite2-City_20170606/GeoLite2-City.mmdb');
 // $record = $mmdbReader->city($_SERVER['REMOTE_ADDR']);
