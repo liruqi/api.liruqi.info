@@ -1,11 +1,14 @@
 <?php
 
-$jsonArray = [];
-$langs = explode('-', $_GET['lang']);
-$country = end($langs); 
-if (strlen($country) !== 2) {
-    #echo json_encode($jsonArray);
-    #exit();
+include_once '../mume.red/mmhk.php';
+
+if (empty($country)) {
+    $jsonArray = [];
+    $langs = explode('-', $_GET['lang']);
+    $can = end($langs); 
+    if (strlen($can) === 2) {
+        $country = $can;
+    }
 }
 
 // require 'vendor/autoload.php';
@@ -19,7 +22,11 @@ if ($_GET['build'] == 61 || $_GET['build'] == 60) {
 }
 // $mmdbReader = new Reader('/srv/http/106.187.88.85/vpn/GeoLite2-City_20170606/GeoLite2-City.mmdb');
 // $record = $mmdbReader->city($_SERVER['REMOTE_ADDR']);
-if ($country === 'CN') {
+if ($country === 'CN' || !empty($corpIP) 
+    || $userIP == $proxyIP['hk5']
+    || $userIP == $proxyIP['hk4']
+    || $userIP == $proxyIP['us0.mume.red']
+    ) {
     $names['f1176cc3-9312-4024-8789-5d7c4bf28798'] = 1;
 } else {
     $names['833fb590-f3d2-419f-9b64-e4879f2ed5a3'] = 1; //proxy rules
