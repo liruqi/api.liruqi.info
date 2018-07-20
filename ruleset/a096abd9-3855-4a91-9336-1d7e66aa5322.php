@@ -23,8 +23,9 @@ if($DIRECT) {
     }
     fclose($DIRECT);
 }
-
-$json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'CN', 'type'=>'GEOIP', 'order' => '0');
+if (intval($userIP) > 250) {
+    $json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'CN', 'type'=>'GEOIP', 'order' => '0');
+}
 $json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'.cn', 'type'=>'URL', 'order' => '0');
 $json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'.qq.com', 'type'=>'URL', 'order' => '0');
 $json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'baidu.com', 'type'=>'DOMAIN-SUFFIX', 'order' => '0');
