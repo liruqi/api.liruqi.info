@@ -26,10 +26,11 @@ if($DIRECT) {
 if (intval($userIP) > 250) {
     $json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'CN', 'type'=>'GEOIP', 'order' => '0');
 }
-$json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'.cn', 'type'=>'URL', 'order' => '0');
-$json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'.qq.com', 'type'=>'URL', 'order' => '0');
-$json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'baidu.com', 'type'=>'URL', 'order' => '0');
-$json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'captive.apple.com', 'type'=>'DOMAIN-SUFFIX', 'order' => '0');
+$json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'.cn', 'type'=>'URL', 'order' => '1');
+$json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'.qq.com', 'type'=>'URL', 'order' => '1');
+$json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'baidu.com', 'type'=>'URL', 'order' => '1');
+$json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'captive.apple.com', 'type'=>'DOMAIN-SUFFIX', 'order' => '1');
+$json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'icloud.com', 'type'=>'DOMAIN-SUFFIX', 'order' => '1');
 $json['name'] = '中国地区直连';
 
 if ($_GET['q'] != $json['id']) {
