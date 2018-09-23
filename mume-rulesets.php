@@ -32,7 +32,7 @@ if ($country === 'CN' || !empty($corpIP)
     $names['833fb590-f3d2-419f-9b64-e4879f2ed5a3'] = 1; //proxy rules
 }
 
-$rulesetdir =  dirname(__FILE__) . "/ruleset";
+$rulesetdir = dirname(__FILE__) . "/ruleset";
 $files = array_diff(scandir($rulesetdir), ['.', '..']);
 
 foreach($files as $key => $name) {
