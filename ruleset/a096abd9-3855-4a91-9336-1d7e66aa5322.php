@@ -29,10 +29,13 @@ if($DIRECT) {
 
 $od = "2";
 $json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'.cn', 'type'=>'URL', 'order' => '2');
+$json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'.yahoo.com', 'type'=>'URL', 'order' => '2');
+$json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'.crashlytics.com', 'type'=>'URL', 'order' => '2');
 $json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'.qq.com', 'type'=>'URL', 'order' => '2');
 $json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'.baidu.com', 'type'=>'URL', 'order' => '2');
 $json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'captive.apple.com', 'type'=>'DOMAIN-SUFFIX', 'order' => '2');
 $json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'icloud.com', 'type'=>'DOMAIN-SUFFIX', 'order' => '2');
+$json["rules"][] = array('action'=>'DIRECT', 'pattern'=>'weibo.com', 'type'=>'DOMAIN-SUFFIX', 'order' => '2');
 $json['name'] = '中国地区直连';
 
 if ($_GET['q'] != $json['id']) {
