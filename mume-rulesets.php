@@ -17,8 +17,8 @@ if (empty($country)) {
 $names = array();
 $names['f1176cc3-9312-4024-8789-5d7c4bf28797'] = 1;
 
-if ($_GET['build'] == 61 || $_GET['build'] == 60) {
-    #$names['833fb590-f3d2-419f-9b64-e4879f2ed5a3'] = 1;
+if ($_GET['build'] >= 84) {
+    $names['a096abd9-3855-4a91-9336-1d7e66aa5324'] = 1;
 }
 // $mmdbReader = new Reader('/srv/http/106.187.88.85/vpn/GeoLite2-City_20170606/GeoLite2-City.mmdb');
 // $record = $mmdbReader->city($_SERVER['REMOTE_ADDR']);
