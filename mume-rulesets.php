@@ -1,9 +1,9 @@
 <?php
 
 include_once '../mume.red/mmhk.php';
+$jsonArray = [];
 
 if (empty($country)) {
-    $jsonArray = [];
     $langs = explode('-', $_GET['lang']);
     $can = end($langs); 
     if (strlen($can) === 2) {
@@ -17,9 +17,13 @@ if (empty($country)) {
 $names = array();
 $names['f1176cc3-9312-4024-8789-5d7c4bf28797'] = 1;
 
-if ($_GET['build'] >= 84) {
+if ($_GET['build'] >= 83) {
     $names['a096abd9-3855-4a91-9336-1d7e66aa5324'] = 1;
+
+    echo json_encode($jsonArray);
+    exit();
 }
+
 // $mmdbReader = new Reader('/srv/http/106.187.88.85/vpn/GeoLite2-City_20170606/GeoLite2-City.mmdb');
 // $record = $mmdbReader->city($_SERVER['REMOTE_ADDR']);
 if ($country === 'CN' || !empty($corpIP) 
