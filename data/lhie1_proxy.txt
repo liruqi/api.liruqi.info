@@ -42,10 +42,6 @@ DOMAIN-SUFFIX,angularjs.org
 DOMAIN-SUFFIX,anthonycalzadilla.com
 DOMAIN-SUFFIX,aol.com
 DOMAIN-SUFFIX,aolcdn.com
-DOMAIN-SUFFIX,apigee.com
-DOMAIN-SUFFIX,apk-dl.com
-DOMAIN-SUFFIX,apkpure.com
-DOMAIN-SUFFIX,appdownloader.net
 DOMAIN-SUFFIX,appledaily.com
 DOMAIN-SUFFIX,appledaily.com.tw
 DOMAIN-SUFFIX,appledailytw.com
@@ -180,10 +176,8 @@ DOMAIN-SUFFIX,gfx.ms
 DOMAIN-SUFFIX,ggpht.com
 DOMAIN-SUFFIX,ghostnoteapp.com
 DOMAIN-SUFFIX,git.io
-DOMAIN-SUFFIX,github.com
 DOMAIN-SUFFIX,github.io
 DOMAIN-SUFFIX,githubapp.com
-DOMAIN-SUFFIX,githubusercontent.com
 DOMAIN-SUFFIX,globalsign.com
 DOMAIN-SUFFIX,gmodules.com
 DOMAIN-SUFFIX,go.com
