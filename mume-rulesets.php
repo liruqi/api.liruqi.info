@@ -1,6 +1,12 @@
 <?php
+$filenames = ['../mume.red/mmhk.php', '../mumevpm.com/mmhk.php'];
+foreach($filenames as $k => $filename) {
+    if (file_exists($filename)) {
+        include_once $filename;
+        break;
+    }
+}
 
-include_once '../mume.red/mmhk.php';
 $jsonArray = [];
 
 if (empty($country)) {
