@@ -67,7 +67,6 @@ DOMAIN-SUFFIX,bit.ly
 DOMAIN-SUFFIX,bitbucket.org
 DOMAIN-SUFFIX,bitcointalk.org
 DOMAIN-SUFFIX,bitshare.com
-DOMAIN-SUFFIX,bjango.com
 DOMAIN-SUFFIX,bkrtx.com
 DOMAIN-SUFFIX,blog.com
 DOMAIN-SUFFIX,blogcdn.com
@@ -180,7 +179,6 @@ DOMAIN-SUFFIX,github.io
 DOMAIN-SUFFIX,githubapp.com
 DOMAIN-SUFFIX,globalsign.com
 DOMAIN-SUFFIX,gmodules.com
-DOMAIN-SUFFIX,go.com
 DOMAIN-SUFFIX,go.jp
 DOMAIN-SUFFIX,godaddy.com
 DOMAIN-SUFFIX,golang.org
@@ -568,7 +566,6 @@ DOMAIN-SUFFIX,twimg.com
 DOMAIN-SUFFIX,twitpic.com
 DOMAIN-SUFFIX,twitter.com
 DOMAIN-SUFFIX,youtube.com
-DOMAIN-SUFFIX,youtube-nocookie.com
 IP-CIDR,103.2.28.0/22
 IP-CIDR,119.235.224.0/21
 IP-CIDR,119.235.232.0/23
