@@ -23,7 +23,7 @@ if (empty($country)) {
 $names = array();
 $names['f1176cc3-9312-4024-8789-5d7c4bf28797'] = 1;
 
-if ($_GET['build'] >= 89 && ($_GET['mobileCountryCode'] !== '460')) {
+if ($_GET['build'] >= 90 && ($_GET['mobileCountryCode'] !== '460')) {
     $names['a096abd9-3855-4a91-9336-1d7e66aa5324'] = 1;
 
     echo json_encode($jsonArray);
